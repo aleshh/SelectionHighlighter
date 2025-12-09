@@ -1,6 +1,4 @@
-browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    console.log("Received request: ", request);
+// background.js
 
-    if (request.greeting === "hello")
-        return Promise.resolve({ farewell: "goodbye" });
-});
+console.log("SelectionHighlighter background loaded");
+// No toolbar click handler needed when we auto-run on selection.
